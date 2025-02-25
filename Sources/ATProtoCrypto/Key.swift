@@ -42,6 +42,17 @@ public struct PrivateKey {
     }
   }
 
+  public var rawRepresentation: Data {
+    switch raw {
+    case let .ed25519(raw):
+      raw.rawRepresentation
+    case let .p256(raw):
+      raw.rawRepresentation
+    case .secp256k1(let raw):
+      raw.dataRepresentation
+    }
+  }
+
   public var publicKey: PublicKey {
     switch raw {
     case let .ed25519(raw):
