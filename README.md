@@ -27,7 +27,7 @@ let package = Package(
 
 ## License
 
-swift-atproto is published under the MIT License, see LICENSE.
+swift-atproto-server is published under the MIT License, see LICENSE.
 
 ## Author
 [Noriaki Watanabe@nnabeyang](https://bsky.app/profile/did:plc:bnh3bvyqr3vzxyvjdnrrusbr)
