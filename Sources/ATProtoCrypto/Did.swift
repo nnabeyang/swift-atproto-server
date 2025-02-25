@@ -60,7 +60,7 @@ public struct DID: Codable {
 public struct Document: Codable {
   public let context: [String]
   public let id: DID
-  public let alsoKnownAs: [String]
+  public let alsoKnownAs: [String]?
   public let verificationMethod: [VerificationMethod]
   public let service: [Service]
 
